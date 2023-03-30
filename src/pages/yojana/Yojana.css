@@ -1,0 +1,415 @@
+.plan-container
+{
+    width: 100vw;
+    padding: 4rem 2rem;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(245, 245, 245);
+}
+
+.plan-container h3+h1
+{
+    font-family: "Noto Sans Devanagari, sans-serif";
+}
+
+.gov-plan
+{
+    width: 60%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.gov-plan h1
+{
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+    /* color: rgb(83, 83, 83); */
+    color: #F97D09;
+}
+
+.ref-letter
+{
+    width: 30%;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.ref-letter input[type="text"], .ref-letter input[type="email"]
+{
+    height: 3.5rem;
+    width: 100%;
+    border: 1px solid gray;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    outline: none;
+}
+
+.ref-letter textarea
+{
+    resize: none;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+    height: 8rem;
+}
+
+.ref-letter textarea::placeholder
+{
+    color: rgb(83, 83, 83);
+}
+
+.ref-letter textarea:focus, .ref-letter textarea:hover 
+{
+    border-color: #F97D09;
+}
+
+.ref-letter p
+{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.ref-letter h1
+{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #F97D09;
+}
+
+.ref-letter input[type="date"]
+{
+    height: 2.5rem;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+.ref-letter input:focus, .ref-letter input:hover 
+{
+    border-color: #F97D09;
+}
+
+.letters-container button
+{
+    margin-right: 2rem;
+}
+
+.plan-card
+{
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2rem;
+    /* background-color: #f9b909; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.plan-card h3
+{
+    background-color: #f9b909;
+    color: rgb(80, 80, 80);
+    border-radius: 8px 8px 0 0;
+    padding: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plan-card p
+{
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+    text-align: justify;
+}
+
+.plan-card a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.plan-card .readMore_box
+{
+    text-align: end;
+}
+
+.plan-card .readMore_box .readMore
+{
+    background-color: #F97D09;
+    outline: none;
+    border: 1px solid #F97D09 ;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 0 1.5rem 1rem 0;
+    /* transition: all 0.2s ease-in; */
+}
+
+.plan-card .readMore:hover
+{
+    background-color: #ffffff;
+    border: 1px solid #F97D09;
+}
+
+.plan-card .readMore:hover a
+{
+    color: #F97D09;
+}
+
+.submit
+{
+    color: #F97D09;
+    background-color: #ffffff;
+    display: block;
+    outline: none;
+    border: 1px solid #F97D09;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.submit:hover
+{
+    color: #ffffff;
+    background-color: #F97D09;
+    border: 1px solid #F97D09;
+}
+
+.errorMsg
+{
+    color: red;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.ref-letter lable
+{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.ScrollbarsCustom
+{
+  height: 85% !important;
+}
+
+.letters-container
+{
+    text-align: center;
+}
+
+.letters-container h2
+{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #F97D09;
+}
+
+.ref-letter
+
+.btn-letter
+{
+    border: none;
+    outline: none;
+    background-color: rgb(97, 97, 219);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.forms-container table
+{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.forms-container table td, .forms-container table th
+{
+    border: 1px solid gray;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.ref-letter hr
+{
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.submit-box
+{
+    position: absolute;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------------------media--------------------------- */
+
+@media (max-width: 992px)
+{
+    .gov-plan h1
+    {
+        font-size: 2.5rem;
+    }
+    .plan-card
+    {
+        width: 95%;
+    }
+    .plan-card h3
+    {
+        font-size: 2rem;
+    }
+    .plan-card p
+    {
+        font-size: 1.5rem;
+    }
+    .ref-letter
+    {
+        width: 38%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .plan-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gov-plan
+    {
+        width: 560px;
+    }
+    .ScrollbarsCustom
+    {
+        height: 80vh !important;
+    }
+    .plan-card
+    {
+        width: 90%;
+    }
+    .ref-letter
+    {
+        width: 350px;
+        margin-top: 3rem;
+    }
+   
+}
+
+@media (max-width: 576px)
+{
+    .gov-plan 
+    {
+        width: 470px;
+    } 
+    .ref-letter
+    {
+        width: 350px;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+    .plan-card
+    {
+        width: 90%;
+    }
+    .plan-card h3
+    {
+        font-size: 2rem;
+    }
+    .plan-card p
+    {
+        font-size: 1.3rem;
+    }
+    .gov-plan h1
+    {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .gov-plan 
+    {
+        width: 100%;
+    } 
+    .ref-letter
+    {
+        width: 85%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .gov-plan h1
+    {
+        font-size: 2rem;
+    }
+    .plan-card h3
+    {
+        font-size: 1.6rem;
+    }
+    .plan-card p
+    {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 380px)
+{
+    .ref-letter
+    {
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .gov-plan h1
+    {
+        font-size: 2rem;
+    }
+    .plan-card h3
+    {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 280px)
+{
+    .plan-container
+    {
+        padding: 1rem;
+    }
+    .gov-plan, .ref-letter
+    {
+        padding: 1rem;
+    }
+    .ref-letter input[type="text"], .ref-letter input[type="email"]
+    {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+}

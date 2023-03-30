@@ -1,0 +1,470 @@
+.photo-container, .media-container
+{
+    width: 90%;
+    margin: auto;
+}
+
+.photo-heading, .media-heading
+{
+    margin-top: 2rem;
+    border-left: 0.5rem solid #F97D09;
+    font-size: 3.2rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #F97D09;
+}
+
+.gallery 
+{
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-container
+{
+    width: 32rem;
+    height: 28rem;
+    position: relative;
+}
+ 
+.image-container img 
+{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container::after 
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 0.2s ease-in-out;
+}
+
+.inner-text 
+{
+    position: absolute;
+    bottom: 5%;
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    text-align: justify;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.image-container:hover::after 
+{
+    transform: scaleY(1);
+}
+
+.image-container:hover .inner-text
+{
+    opacity: 1;
+    z-index: 2;
+}
+
+.popup-image
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.popup-image img
+{
+    margin-top: 5rem;
+    width: 70rem;
+    height: 40rem;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #ffffff;
+}
+
+.popup-image .icon
+{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: #ffffff;
+}
+
+.popup
+{
+    display: none;
+}
+
+.icon-disable
+{
+    display: none;
+}
+
+.popup-image .image-desc
+{
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.pageButton
+{
+    border: none;
+    outline: none;
+    height: 3rem;
+    width: 3rem;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 0 0.8rem;
+}
+
+.pagination
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.next-box, .prev-box
+{
+    cursor: pointer;
+}
+
+.activePage
+{
+    border: none;
+    outline: none;
+    height: 3rem;
+    width: 3rem;
+    background-color: #F97D09;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 0.8rem;
+}
+
+.media-container
+{
+    width: 90vw;  
+}
+
+.video-container
+{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.video-container .video
+{
+    /* width: 20rem; */
+    height: 30rem;
+}
+
+.video iframe
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.video iframe:hover
+{
+    transform: scale(1.2);
+}
+
+.video-container .slick-dots li.slick-active button:before {
+    color: #F97D09 !important;
+    font-size: 2rem;
+}
+
+.video-container .slick-dots li button:before{
+    color: gray;
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.video-container .slick-prev:before, .video-container .slick-next:before
+{
+    color: #F97D09 !important;
+}
+
+
+/* -------------------------------media--------------------------------------------*/
+
+/* @media (max-width: 1322px) 
+{
+    .gallery .image-container 
+    {
+        height: 32rem;
+        width: 35rem;
+        position: relative;
+    }
+} */
+
+@media (max-width: 1200px) 
+{
+    .gallery .image-container 
+    {
+        width: 32rem;
+        height: 28rem;
+        position: relative; 
+    }
+    .popup-image img
+    {
+        margin-top: 6rem;
+        width: 70rem;
+        height: 38rem;
+    }
+    .popup-image .icon
+    {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    .popup-image .image-desc
+    {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .popup-image img
+    {
+        margin-top: 5rem;
+        width: 67vw;
+        height: 33rem;
+    }
+    .popup-image .image-desc
+    {
+        font-size: 1.5rem;
+    }
+    .gallery .image-container 
+    {
+        height: 22rem;
+        width: 25rem;
+        position: relative;
+    }
+    .photo-heading, .media-heading
+    {
+        font-size: 2.8rem;
+    }
+    .video-container .video
+    {
+        /* width: 20rem; */
+        height: 20rem;
+    }
+}
+
+
+@media (max-width: 822px) 
+{
+    .photo-container
+    {
+        width: 95vw;
+    }
+    .popup-image img
+    {
+        margin-top: 5rem;
+        width: 70vw;
+        height: 32rem;
+    }
+    .popup-image .image-desc
+    {
+        font-size: 1.5rem;
+    }
+    .photo-heading, .media-heading
+    {
+        font-size: 2.6rem;
+    }
+    .gallery
+    {
+        flex-wrap: wrap;
+    }
+     .gallery .image-container 
+    {
+        height: 28rem;
+        width: 32rem;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .popup-image img
+    {
+        margin-top: 6rem;
+        width: 70vw;
+        height: 32rem;
+    }
+    .popup-image .image-desc
+    {
+        font-size: 1.4rem;
+    }
+    .popup-image .icon
+    {
+        top: 0rem;    
+        right: 0rem;
+    }
+    .inner-text
+    {
+        font-size: 1rem;
+    } 
+}
+
+@media (max-width: 576px) {
+    .video-container .video
+    {
+        height: 20rem;
+    }
+    .gallery
+    {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container .video
+    {
+        height: 25rem;
+    }
+    .video-container .slick-dots li.slick-active button:before
+    {   
+        font-size: 1rem;
+    }
+    .video-container .slick-dots li button:before
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 455px) 
+{
+    .popup-image img
+    {
+        width: 85vw;
+    }
+    .popup-image .image-desc
+    {
+        font-size: 1.4rem;
+    }
+    .popup-image .icon
+    {
+        margin-right: 0;
+        font-size: 0.7rem;
+    }
+    .photo-heading, .media-heading
+    {
+        font-size: 2.2rem;
+    }
+    .image-container
+    {
+        width: 32rem;
+        height: 28rem;
+    }
+}
+
+@media (max-width: 380px)
+{
+    .popup-image img
+    {
+        width: 85vw;
+    }
+    .popup-image .image-desc
+    {
+        font-size: 1.2rem;
+    }
+    .video-container
+    {
+        width: 85vw;
+        margin: auto;
+    }
+    .video-container .video
+    {
+        height: 19rem;
+    }
+    .activePage, .pageButton
+    {
+        height: 2.2rem;
+        width: 2.2rem;
+        font-size: 1rem;
+    } 
+    .prev-box, .next-box
+    {
+        font-size: 1rem;
+    }
+    .image-container
+    {
+        width: 100%;
+    }
+    .gallery
+    {
+        width: 90vw;
+        margin: auto;
+        align-items: center;
+    }
+    .image-container
+    {
+        width: 100%;
+        max-height: 26rem;
+        height: auto;
+    }
+    .pagination
+    {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 280px)
+{
+    .video-container
+    {
+        width: 80vw;
+        margin: auto;
+    }
+    .video-container .video
+    {
+        height: 15rem;
+    }
+    .video-container .slick-dots li.slick-active button:before
+    {   
+        font-size: 0.6rem;
+    }
+
+    .video-container .slick-dots li button:before
+    {
+        font-size: 0.6rem;
+    }
+    .image-container
+    {
+        max-height: 21rem !important;
+    }
+}

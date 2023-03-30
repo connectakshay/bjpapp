@@ -1,0 +1,356 @@
+.form-wrapper
+{
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+    width: 48rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.form-wrapper h1
+{
+    margin-top: 1rem !important;
+    margin-bottom: 2rem;
+}
+
+.form-wrapper input[type="file"] {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-wrapper input[type="text"] {
+    height: 4rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid gray;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.form-wrapper #name {
+    margin-bottom: 1.5rem;
+}
+
+.form-wrapper .radio-label {
+    width: 7rem;
+}
+
+.form-wrapper .category 
+{
+    margin-bottom: 1rem;
+}
+
+.form-wrapper textarea {
+    background: transparent;
+    outline: none;
+    border: 1px solid gray;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.loc-mob-container,
+.add-dob-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* border: 2px solid red; */
+    margin-bottom: 1.5rem;
+}
+
+.loc-mob-container #mob,
+#loc {
+    width: 49%;
+    margin-right: 0;
+}
+
+.add-dob-container #add {
+    width: 49%;
+}
+
+.add-dob-container .dob-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.form-wrapper input[type="radio"] {
+    margin-right: 2rem;
+}
+
+.form-wrapper input[type="date"] {
+    height: 3rem;
+    width: 12rem;
+    /* margin-bottom: 2rem; */
+    font-size: 1.5rem;
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 1rem;
+    color: gray;
+}
+
+
+.form-wrapper input:focus, .form-wrapper input:hover
+{
+    border-color: #F97D09;
+}
+
+.form-wrapper textarea:focus, .form-wrapper textarea:hover 
+{
+    border-color: #F97D09;
+}
+
+.form-wrapper input::placeholder,
+textarea::placeholder {
+    color: gray;
+    font-size: 1.3rem;
+}
+
+.form-wrapper textarea {
+    resize: none;
+}
+
+.form-wrapper label {
+    font-size: 1.5rem;
+    /* margin-right: 2rem; */
+}
+
+.form-wrapper input[type="submit"] {
+    outline: none;
+    color: #F97D09;
+    background-color: #ffffff;
+    padding: 0.5rem 2.2rem 0.5rem 2.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #F97D09;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.form-wrapper input[type="submit"]:hover
+{
+    color: #ffffff;
+    background-color: #F97D09;
+    border: 1px solid #F97D09;
+}
+
+.form-wrapper p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.form-wrapper h1 {
+    margin-top: 2rem;
+    color: #F97D09;
+}
+
+.submit-box
+{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* //------------------------media----------------------------------- */
+
+@media (max-width: 576px) 
+{
+    .form-wrapper 
+    {
+        width: 90vw;
+    }    
+    .form-wrapper .dob-container label
+    {
+        font-size: 1.3rem;
+    }
+    .form-wrapper input[type="date"]
+    {
+        width: 54%;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    .form-wrapper 
+    {
+        width: 90vw;
+    }
+
+    .form-wrapper input[type="text"] 
+    {
+        height: 3rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem !important;
+    }
+    .form-wrapper input[type="file"]
+    {
+        margin-bottom: 1rem;
+    }
+    .form-wrapper h1 
+    {
+        margin-top: 2rem !important;
+    }
+
+    .form-wrapper textarea 
+    {
+        height: 6rem;
+        padding: 1rem 1rem 0.5rem 1rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .form-wrapper input[type="radio"]
+    {
+        margin-right: 1rem;
+    }
+    .form-wrapper input[type="submit"] 
+    {
+        font-size: 1.5rem;
+        padding: 0.3rem 2.2rem 0.3rem 2.2rem;
+    }
+
+    .form-wrapper input[type="date"] 
+    {
+        width: 13rem;
+    }
+
+    .form-wrapper .radio-label 
+    {
+        width: 8.1rem;
+    }
+
+    .dob-container label
+    {
+        margin-right: 1rem;
+    }
+    .form-wrapper .category
+    {
+        margin-bottom: 1rem;
+    }
+    .form-wrapper .add-dob-container
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .form-wrapper .add-dob-container #add
+    {
+        width: 100% !important;
+    }
+    .form-wrapper .add-dob-container .dob-container 
+    {
+        width: 24rem !important;
+        /* margin-top: 1rem; */
+    }
+    .form-wrapper .loc-mob-container
+    {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 380px) 
+{
+    .form-wrapper {
+        width: 90vw;
+        padding: 1rem;
+    }
+    .form-wrapper .radio-label 
+    {
+        width: 6.4rem;
+    }    
+}
+
+@media (max-width: 320px) 
+{
+    .form-wrapper .radio-label 
+    {
+        width: 7rem;
+    }  
+}
+
+@media (max-width: 280px) {
+  
+    .form-wrapper {
+        width: 90vw;
+    }
+    .form-wrapper input[type="file"]
+    {
+        font-size: 1.3rem;
+    }
+    .form-wrapper input[type="text"] {
+        height: 2.8rem;
+        padding: 1rem
+    }
+    .form-wrapper textarea
+    {
+        height: 5rem !important;
+    }
+    .form-wrapper .add-dob-container .dob-container
+    {
+        width: 100% !important;
+    }
+    .form-wrapper .add-dob-container .dob-container label
+    {
+        font-size: 1.3rem;
+    }
+    .form-wrapper input[type="date"]
+    {
+        width: 50%;
+        font-size: 1.3rem;
+        height: 2.8rem;
+    }
+    .form-wrapper h1 {
+        margin-top: 1rem !important;
+    }
+
+    .form-wrapper textarea {
+        height: 13rem;
+        padding: 1rem 1rem 0.5rem 1rem;
+        font-size: 2rem;
+    }
+
+    .form-wrapper input[type="submit"] {
+        font-size: 1.3rem;
+    }
+    .form-wrapper .radio-label 
+    {
+        width: 6.7rem;
+        font-size: 1.3rem;
+    }   
+}
+
+@media (max-width: 230px) {
+
+    .form-wrapper .radio-label 
+    {
+        width: 5rem;
+        font-size: 1.2rem;
+    } 
+    .form-wrapper .add-dob-container .dob-container label
+    {
+        font-size: 1.3rem;
+    }
+    .form-wrapper input[type="date"]
+    {
+        width: 50%;
+        font-size: 1.1rem;
+        height: 2.8rem;
+    }
+}
+

@@ -1,0 +1,157 @@
+.blog-page
+{
+    background-color: rgb(250, 250, 250);
+}
+
+.blog-container
+{
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+}
+
+.blog-image
+{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 3rem;
+}
+
+.blog-image > img
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.blog-container .date
+{
+    color: #00A300;
+    font-size: 2rem;
+}
+
+.blog-container .location
+{
+    font-weight: bold;
+    font-size: 2rem;
+    color: gray;
+}
+
+.blog-container h2
+{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F97D09;
+    /* border-left: 0.5rem solid #F97D09; */
+    text-align: center;
+}
+
+.blog-desc::first-letter
+{
+    margin-left: 2rem;
+}
+
+.blog-container .blog-desc
+{
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+
+
+/* -----------------------------media-------------------------------- */
+
+
+@media (max-width: 992px)
+{
+    .blog-image
+    {
+        height: 53vw;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .blog-container .date, .blog-container .location
+    {
+        font-size: 1.9rem;
+    }
+    .blog-image
+    {
+        height: 55vw;
+    }
+}
+
+@media (max-width: 576px)
+{
+    .blog-container .blog-desc
+    {
+        font-size: 1.5rem;
+    }
+    .blog-container .date, .blog-container .location
+    {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .blog-image
+    {
+        height: 60vw;
+    }
+    .blog-container .blog-desc
+    {
+        font-size: 1.4rem;
+    }
+    .blog-container h2
+    {
+        font-size: 2.1rem;
+    }
+    .blog-container .date, .blog-container .location
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 380px)
+{
+    .blog-container .blog-desc
+    {
+        font-size: 1.3rem;
+    }
+    .blog-container .date, .blog-container .location
+    {
+        font-size: 1.4rem;
+    }
+    .blog-container h2
+    {
+        font-size: 1.9rem;
+    }
+
+}
+
+@media (max-width: 280px)
+{
+    .blog-container .blog-desc
+    {
+        font-size: 1rem;
+    }
+    .blog-container .date, .blog-container .location
+    {
+        font-size: 1.1rem;
+    }
+    .blog-container h2
+    {
+        font-size: 1.6rem;
+    }
+}
